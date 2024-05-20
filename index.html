@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Web Page</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="about">
+      <div class="section-content">
+        <h2>About Us</h2>
+        <p>
+          We are a team of passionate individuals dedicated to providing
+          top-notch services.
+        </p>
+        <img
+          id="about-image"
+          src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-souvenirpixels-417074.jpg&fm=jpg"
+          alt="About Us Image"
+        />
+        <select id="image-select">
+          <option
+            value="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-souvenirpixels-417074.jpg&fm=jpg"
+          >
+            Image 1
+          </option>
+          <option
+            value="https://sotp.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2021/04/mark-koch-KiRlN3jjVNU-unsplash-637x425.jpeg"
+          >
+            Image 2
+          </option>
+          <option
+            value="https://img-4.linternaute.com/0efC7-fKD0qAHCUcChtSVXT9Ego=/1500x/smart/43f787f117784c3fa9a928194bd91d5e/ccmcms-linternaute/12325430.jpg"
+          >
+            Image 3
+          </option>
+          <option
+            value="https://cdn.create.vista.com/api/media/small/95359890/stock-photo-beautiful-moraine-lake-in-canada"
+          >
+            Image 4
+          </option>
+        </select>
+      </div>
+    </section>
+
+    <script>
+      document
+        .getElementById("image-select")
+        .addEventListener("change", function () {
+          var selectedImage = this.value;
+          document.getElementById("about-image").src = selectedImage;
+        });
+    </script>
+
+    <footer>
+      <p>&copy;</p>
+    </footer>
+  </body>
+</html>
